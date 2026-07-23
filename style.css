@@ -1,0 +1,47 @@
+/* 1. Фон всього екрана (сірий) */
+body { 
+    background-color: #838587; 
+    font-family: Arial, sans-serif; 
+    margin: 0; 
+    padding: 0px; 
+}
+
+/* 2. Центральна біла картка */
+.container {
+    max-width: 1200px;
+    margin: 0px auto;          /* Центруємо картку */
+    min-height: 100vh;
+    box-sizing: border-box;
+    background-color: #ffffff;  /* Білий колір картки */
+    padding: 30px;              /* Відступи всередині картки */
+    border-radius: 0px;        /* Закруглені кути */
+    color: #333333;             /* Темний колір тексту */
+}
+
+/* 3. Меню навігації */
+nav { 
+    background: #f4f4f4; 
+    padding: 15px; 
+    border-radius: 20px; 
+    margin-bottom: 30px; 
+}
+
+nav a { 
+    margin-right: 20px; 
+    text-decoration: none; 
+    color: #0066cc; 
+    font-weight: bold; 
+}
+
+nav a:hover { 
+    text-decoration: underline; 
+}
+
+/* 4. Картинка */
+img { 
+    width: 800px; /* Збільшили ширину до 350px */
+    height: auto; /* АВТО-висота (дуже важливо!) */
+    border-radius: 12px; 
+    display: block;       /* Робимо картинку окремим блоком */
+    margin: 5px auto 0;  /* 15px зверху, auto збоку (по центру), 0 знизу */
+}
