@@ -123,3 +123,48 @@ nav a:hover {
   color: #777777;
   font-size: 14px;
 }
+
+/* ==========================================
+   АДАПТИВНІ СТИЛІ ДЛЯ ТЕЛЕФОНІВ (до 768px)
+   ========================================== */
+@media (max-width: 768px) {
+
+  /* 1. Шапка: робимо логотип та меню один під одним */
+  .site-header {
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    text-align: center;
+  }
+
+  nav a {
+    margin: 0 10px; /* Менші відступи між кнопками меню */
+    font-size: 14px;
+  }
+
+  /* 2. Головний баннер: зменшуємо відступи та заголовок */
+  .hero-section {
+    padding: 60px 15px; /* Менше порожнього місця зверху й знизу */
+  }
+
+  .hero-section h1 {
+    font-size: 28px; /* Зменшуємо величезний текст 48px, щоб він вміщався */
+  }
+
+  .hero-section p {
+    font-size: 16px;
+  }
+
+  .btn {
+    width: 100%; /* Кнопка на весь екран телефону — так набагато зручніше тиснути пальцем! */
+  }
+
+  /* 3. Підвал (Footer): вирівнюємо контакти по центру */
+  .footer-container, 
+  .footer-contacts {
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    text-align: center;
+  }
+}
